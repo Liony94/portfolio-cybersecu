@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { FaShieldAlt, FaSearch, FaCrosshairs, FaNetworkWired } from 'react-icons/fa';
+import { FaShieldAlt, FaCrosshairs, FaNetworkWired } from 'react-icons/fa';
 import { SiMatrix } from 'react-icons/si';
 
 export default function CyberSecurityTree() {
