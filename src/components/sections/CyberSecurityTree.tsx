@@ -3,8 +3,23 @@ import { motion } from 'framer-motion';
 import { FaShieldAlt, FaCrosshairs, FaNetworkWired } from 'react-icons/fa';
 import { SiMatrix } from 'react-icons/si';
 
+interface CyberPathItem {
+  id: string;
+  name: string;
+  status: 'completed' | 'in-progress' | 'planned';
+}
+
+interface CyberPath {
+  id: string;
+  title: string;
+  icon: React.ElementType;
+  color: string;
+  progress: number;
+  items: CyberPathItem[];
+}
+
 export default function CyberSecurityTree() {
-  const cyberPath = [
+  const cyberPath: CyberPath[] = [
     {
       id: '1',
       title: 'Fondamentaux SOC',
@@ -73,7 +88,7 @@ export default function CyberSecurityTree() {
     }
   ];
 
-  const getStatusColor = (status: string) => {
+  const getStatusColor = (status: CyberPathItem['status']) => {
     switch (status) {
       case 'completed': return 'bg-green-500';
       case 'in-progress': return 'bg-yellow-500';
@@ -83,14 +98,17 @@ export default function CyberSecurityTree() {
   };
 
   return (
-    <section className="py-24">
+    <section className="py-24" aria-labelledby="cyber-security-title">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         className="max-w-7xl mx-auto px-4"
       >
-        <h2 className="text-4xl font-bold text-center mb-20 dark:text-white">
+        <h2
+          id="cyber-security-title"
+          className="text-4xl font-bold text-center mb-20 dark:text-white"
+        >
           Parcours Cybersécurité
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -104,12 +122,15 @@ export default function CyberSecurityTree() {
               className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 overflow-hidden group"
             >
               <div className="flex items-center gap-4 mb-6">
-                <div className={`p-3 rounded-xl bg-gradient-to-r ${path.color}`}>
+                <div
+                  className={`p-3 rounded-xl bg-gradient-to-r ${path.color}`}
+                  aria-hidden="true"
+                >
                   <path.icon className="text-2xl text-white" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold dark:text-white">{path.title}</h3>
-                  <div className="flex items-center gap-2 mt-2">
+                  <div className="flex items-center gap-2 mt-2" role="progressbar" aria-valuenow={path.progress} aria-valuemin={0} aria-valuemax={100}>
                     <div className="flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full">
                       <motion.div
                         className={`h-full rounded-full bg-gradient-to-r ${path.color}`}
@@ -131,8 +152,13 @@ export default function CyberSecurityTree() {
                     key={item.id}
                     className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 dark:bg-gray-700/50 transition-transform hover:translate-x-2"
                   >
-                    <div className={`w-3 h-3 rounded-full ${getStatusColor(item.status)}`} />
-                    <span className="text-gray-700 dark:text-gray-200">{item.name}</span>
+                    <div
+                      className={`w-3 h-3 rounded-full ${getStatusColor(item.status)}`}
+                      aria-hidden="true"
+                    />
+                    <span className="text-gray-700 dark:text-gray-200">
+                      {item.name}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -147,6 +173,7 @@ export default function CyberSecurityTree() {
                   repeat: Infinity,
                   ease: 'linear',
                 }}
+                aria-hidden="true"
               />
             </motion.div>
           ))}
