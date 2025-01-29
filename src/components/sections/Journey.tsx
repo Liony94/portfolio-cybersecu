@@ -6,30 +6,30 @@ export default function Journey() {
   const experiences = [
     {
       company: "Nestlé",
-      role: "Développeur Web",
-      period: "2023",
-      description: "Développement et maintenance d'applications web d'entreprise",
+      role: "Technicien Support Informatique",
+      period: "Novembre 2020 - Septembre 2022",
+      description: "Support niveau 1, gestion des comptes utilisateurs, dépannage systèmes Windows, configuration des postes et logiciels, suivi des incidents via ServiceNow et Jira.",
       icon: FaBuilding,
-      color: "from-blue-500 to-blue-600",
-      skills: ["Next.js", "React", "Node.js", "TypeScript"]
-    },
-    {
-      company: "Les Echos Le Parisien",
-      role: "Développeur Full Stack",
-      period: "2022",
-      description: "Développement de solutions digitales pour le groupe de presse",
-      icon: FaCode,
-      color: "from-purple-500 to-purple-600",
-      skills: ["NestJS", "React", "PostgreSQL", "Docker"]
-    },
-    {
-      company: "Infotem & Groupagora",
-      role: "Développeur Web",
-      period: "2021",
-      description: "Développement de solutions web innovantes pour startups",
-      icon: FaBriefcase,
       color: "from-green-500 to-green-600",
-      skills: ["PHP", "Symfony", "JavaScript", "MySQL"]
+      skills: ["Windows", "ServiceNow", "Jira", "Support IT"]
+    },
+    {
+      company: "Les Echos, Le Parisien",
+      role: "Développeur Web Full Stack",
+      period: "Mars 2023 - Septembre 2023",
+      description: "Déploiement Docker, refonte GED v2 en PHP 8 & Symfony 6, implémentation d'un générateur PDF, développement d'APIs avec API Platform et authentification WebAuthn.",
+      icon: FaBriefcase,
+      color: "from-purple-500 to-purple-600",
+      skills: ["PHP 8", "Symfony 6", "Docker", "API Platform", "WebAuthn"]
+    },
+    {
+      company: "Infotem",
+      role: "Développeur Backend NestJS",
+      period: "Octobre 2023",
+      description: "Conception et développement d'API avec NestJS, implémentation de l'authentification JWT, configuration CORS, gestion des erreurs, mise en place de Docker et WebSockets. Configuration de serveurs OVH et AWS.",
+      icon: FaCode,
+      color: "from-blue-500 to-blue-600",
+      skills: ["NestJS", "Docker", "AWS", "MongoDB", "WebSockets", "JWT"]
     }
   ];
 

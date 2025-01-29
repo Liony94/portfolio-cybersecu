@@ -5,12 +5,12 @@ import { SiNestjs, SiNextdotjs, SiSymfony, SiSharp } from 'react-icons/si';
 
 export default function TechStack() {
   const technologies = [
-    { name: 'Next.js', level: 90, icon: SiNextdotjs, color: 'hover:text-black dark:hover:text-white' },
+    { name: 'Next.js', level: 65, icon: SiNextdotjs, color: 'hover:text-black dark:hover:text-white' },
     { name: 'NestJS', level: 85, icon: SiNestjs, color: 'hover:text-red-600' },
-    { name: 'React', level: 90, icon: FaReact, color: 'hover:text-blue-400' },
-    { name: 'Node.js', level: 85, icon: FaNodeJs, color: 'hover:text-green-500' },
-    { name: 'PHP/Symfony', level: 75, icon: SiSymfony, color: 'hover:text-purple-500' },
-    { name: 'Python', level: 70, icon: FaPython, color: 'hover:text-yellow-500' },
+    { name: 'React', level: 70, icon: FaReact, color: 'hover:text-blue-400' },
+    { name: 'Node.js', level: 80, icon: FaNodeJs, color: 'hover:text-green-500' },
+    { name: 'PHP/Symfony', level: 83, icon: SiSymfony, color: 'hover:text-purple-500' },
+    { name: 'Python', level: 55, icon: FaPython, color: 'hover:text-yellow-500' },
     { name: 'C#', level: 65, icon: SiSharp, color: 'hover:text-purple-600' },
   ];
 
