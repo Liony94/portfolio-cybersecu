@@ -3,6 +3,7 @@ import Journey from '@/components/sections/Journey';
 import TechStack from '@/components/sections/TechStack';
 import CyberSecurityTree from '@/components/sections/CyberSecurityTree';
 import Projects from '@/components/sections/Projects';
+import CasePractices from '@/components/sections/CasePractices';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
         <Hero />
         <Projects />
+        <CasePractices />
         <CyberSecurityTree />
         <Journey />
         <TechStack />
