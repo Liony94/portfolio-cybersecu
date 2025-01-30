@@ -47,14 +47,14 @@ export default function PhishingAnalysis() {
 
               <div className="mb-12">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-                  Méthodologie d'Investigation
+                  Méthodologie d&apos;Investigation
                 </h2>
                 <ul className="space-y-4 text-lg text-gray-600 dark:text-gray-300">
                   <li className="flex items-start gap-3">
                     <FaSearch className="mt-1.5 text-blue-500 dark:text-blue-400 flex-shrink-0" />
                     <div>
                       <strong className="text-gray-900 dark:text-white">Monitoring Initial :</strong>
-                      <span className="ml-2">Détection de l'email malveillant et collecte des premières informations</span>
+                      <span className="ml-2">Détection de l&apos;email malveillant et collecte des premières informations</span>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -68,7 +68,7 @@ export default function PhishingAnalysis() {
                     <FaSearch className="mt-1.5 text-blue-500 dark:text-blue-400 flex-shrink-0" />
                     <div>
                       <strong className="text-gray-900 dark:text-white">Analyse Sandbox :</strong>
-                      <span className="ml-2">Utilisation d'ANY.RUN pour l'analyse dynamique du malware</span>
+                      <span className="ml-2">Utilisation d&apos;ANY.RUN pour l&apos;analyse dynamique du malware</span>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -82,7 +82,7 @@ export default function PhishingAnalysis() {
                     <FaSearch className="mt-1.5 text-blue-500 dark:text-blue-400 flex-shrink-0" />
                     <div>
                       <strong className="text-gray-900 dark:text-white">Containment :</strong>
-                      <span className="ml-2">Mise en place de mesures de confinement pour limiter l'impact</span>
+                      <span className="ml-2">Mise en place de mesures de confinement pour limiter l&apos;impact</span>
                     </div>
                   </li>
                 </ul>
@@ -118,7 +118,7 @@ export default function PhishingAnalysis() {
                 <ul className="space-y-4 text-lg text-gray-600 dark:text-gray-300">
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-blue-500 mt-2.5 flex-shrink-0" />
-                    <span>Identification et analyse complète de la chaîne d'attaque</span>
+                    <span>Identification et analyse complète de la chaîne d&apos;attaque</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-blue-500 mt-2.5 flex-shrink-0" />
@@ -130,7 +130,7 @@ export default function PhishingAnalysis() {
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-blue-500 mt-2.5 flex-shrink-0" />
-                    <span>Documentation détaillée de l'incident pour référence future</span>
+                    <span>Documentation détaillée de l&apos;incident pour référence future</span>
                   </li>
                 </ul>
               </div>
