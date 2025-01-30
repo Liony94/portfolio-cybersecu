@@ -9,7 +9,7 @@ export default function PhishingAnalysis() {
           href="/"
           className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mb-12 text-lg"
         >
-          ← Retour à l'accueil
+          ← Retour à l&apos;accueil
         </Link>
 
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 md:p-12">
@@ -20,7 +20,7 @@ export default function PhishingAnalysis() {
               </div>
               <div>
                 <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-6 leading-tight">
-                  Analyse d'une Attaque par Phishing - Excel 4.0 Macros
+                  Analyse d&apos;une Attaque par Phishing - Excel 4.0 Macros
                 </h1>
                 <div className="flex gap-3 mb-4">
                   <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">
@@ -39,9 +39,9 @@ export default function PhishingAnalysis() {
                   Contexte
                 </h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Analyse d'un scénario réel de phishing sur la plateforme LetsDefend, impliquant une attaque sophistiquée 
+                  Analyse d&apos;un scénario réel de phishing sur la plateforme LetsDefend, impliquant une attaque sophistiquée 
                   utilisant des macros Excel 4.0. Cette investigation a permis de mettre en pratique des compétences en 
-                  analyse de logs, gestion d'incidents et analyse de malwares.
+                  analyse de logs, gestion d&apos;incidents et analyse de malwares.
                 </p>
               </div>
 
