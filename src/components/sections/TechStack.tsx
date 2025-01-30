@@ -1,17 +1,20 @@
 'use client';
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaPython, FaDatabase } from 'react-icons/fa';
 import { SiNestjs, SiNextdotjs, SiSymfony, SiSharp } from 'react-icons/si';
 
 export default function TechStack() {
   const technologies = [
-    { name: 'Next.js', level: 65, icon: SiNextdotjs, color: 'hover:text-black dark:hover:text-white' },
-    { name: 'NestJS', level: 85, icon: SiNestjs, color: 'hover:text-red-600' },
-    { name: 'React', level: 70, icon: FaReact, color: 'hover:text-blue-400' },
-    { name: 'Node.js', level: 80, icon: FaNodeJs, color: 'hover:text-green-500' },
-    { name: 'PHP/Symfony', level: 83, icon: SiSymfony, color: 'hover:text-purple-500' },
-    { name: 'Python', level: 55, icon: FaPython, color: 'hover:text-yellow-500' },
-    { name: 'C#', level: 65, icon: SiSharp, color: 'hover:text-purple-600' },
+    { name: 'Next.js', level: 'Intermédiaire', icon: SiNextdotjs, color: 'hover:text-black dark:hover:text-white' },
+    { name: 'NestJS', level: 'Expert', icon: SiNestjs, color: 'hover:text-red-600' },
+    { name: 'React', level: 'Intermédiaire', icon: FaReact, color: 'hover:text-blue-400' },
+    { name: 'MySQL', level: 'Expert', icon: FaDatabase, color: 'hover:text-green-500' },
+    { name: 'PostgreSQL', level: 'Intermédiaire', icon: FaDatabase, color: 'hover:text-green-500' },
+    { name: 'MongoDB', level: 'Avancé', icon: FaDatabase, color: 'hover:text-green-500' },
+    { name: 'Node.js', level: 'Expert', icon: FaNodeJs, color: 'hover:text-green-500' },
+    { name: 'PHP/Symfony', level: 'Expert', icon: SiSymfony, color: 'hover:text-purple-500' },
+    { name: 'Python', level: 'Intermédiaire', icon: FaPython, color: 'hover:text-yellow-500' },
+    { name: 'C#', level: 'Intermédiaire', icon: SiSharp, color: 'hover:text-purple-600' },
   ];
 
   return (
@@ -39,17 +42,8 @@ export default function TechStack() {
               <div className="flex-1">
                 <h3 className="font-bold text-lg dark:text-white mb-1">{tech.name}</h3>
                 <div className="flex items-center gap-2">
-                  <div className="flex-1 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                    <motion.div
-                      className="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${tech.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: index * 0.1 }}
-                    />
-                  </div>
-                  <span className="text-sm font-medium text-gray-600 dark:text-gray-300 min-w-[3rem]">
-                    {tech.level}%
+                  <span className="px-3 py-1 text-sm font-medium rounded-full bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100">
+                    {tech.level}
                   </span>
                 </div>
               </div>
