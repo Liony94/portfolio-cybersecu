@@ -31,7 +31,7 @@ const Projects = () => {
           </div>
 
           <p className="text-gray-600 dark:text-gray-300 mb-4">
-            Un outil permettant de détecter et décoder des requêtes SQL et des URLs pour des analyses de sécurité.
+            Un outil permettant de décoder des requêtes SQL et des URLs pour des analyses de sécurité.
             Cet outil facilite la vérification et le décodage des URLs pour identifier d'éventuelles menaces. Afin de respecter
             les bonnes pratiques de sécurité, l'outil peut être hébergé facilement sur un serveur local ce qui évite de passer par un service tiers.
           </p>
