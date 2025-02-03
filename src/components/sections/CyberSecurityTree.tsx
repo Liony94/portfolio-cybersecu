@@ -61,7 +61,6 @@ export default function CyberSecurityTree() {
       color: 'from-red-500 to-red-600',
       progress: 100,
       items: [
-        { id: '3.1', name: 'Introduction', status: 'completed' },
         { id: '3.2', name: 'Matrix', status: 'completed' },
         { id: '3.3', name: 'Tactiques', status: 'completed' },
         { id: '3.4', name: 'Techniques and sub-techniques', status: 'completed' },
@@ -78,12 +77,71 @@ export default function CyberSecurityTree() {
       color: 'from-green-500 to-green-600',
       progress: 100,
       items: [
-        { id: '4.1', name: 'Introduction au phishing', status: 'completed' },
         { id: '4.2', name: 'Types de phishing', status: 'completed' },
         { id: '4.3', name: 'En-tête d\'email et comment l\'analyser', status: 'completed' },
         { id: '4.4', name: 'Analyse statique', status: 'completed' },
         { id: '4.5', name: 'Analyse dynamique', status: 'completed' },
         { id: '4.6', name: 'Techniques supplémentaires', status: 'completed' },
+      ]
+    },
+    {
+      id: '5',
+      title: 'Détection des Attaques Web',
+      icon: FaNetworkWired,
+      color: 'from-yellow-500 to-yellow-600',
+      progress: 100,
+      items: [
+        { id: '5.2', name: 'Importance de la détection des attaques Web', status: 'completed' },
+        { id: '5.3', name: 'OWASP', status: 'completed' },
+        { id: '5.4', name: 'Fonctionnement des applications Web', status: 'completed' },
+        { id: '5.5', name: 'Détection des attaques par injection SQL', status: 'completed' },
+        { id: '5.6', name: 'Détection des attaques Cross Site Scripting (XSS)', status: 'completed' },
+        { id: '5.7', name: 'Détection des attaques par injection de commandes', status: 'completed' },
+        { id: '5.8', name: 'Détection des attaques IDOR', status: 'completed' },
+        { id: '5.9', name: 'Détection des attaques RFI & LFI', status: 'completed' },
+      ]
+    },
+    {
+      id: '6',
+      title: 'Détection des Attaques Web - Avancé',
+      icon: FaNetworkWired,
+      color: 'from-orange-500 to-orange-600',
+      progress: 100,
+      items: [
+        { id: '6.1', name: 'Détection des attaques par redirection ouverte', status: 'completed' },
+        { id: '6.2', name: 'Détection des attaques par traversée de répertoire', status: 'completed' },
+        { id: '6.3', name: 'Détection des attaques par force brute', status: 'completed' },
+        { id: '6.4', name: 'Détection des attaques XXE (XML External Entity)', status: 'completed' },
+      ]
+    },
+    {
+      id: '7',
+      title: 'Investigation des Alertes SIEM',
+      icon: FaNetworkWired,
+      color: 'from-teal-500 to-teal-600',
+      progress: 100,
+      items: [
+        { id: '7.1', name: 'Introduction aux alertes SIEM', status: 'completed' },
+        { id: '7.2', name: 'Détection', status: 'completed' },
+        { id: '7.3', name: 'Création de cas et initiation du playbook', status: 'completed' },
+        { id: '7.4', name: 'Analyse des emails', status: 'completed' },
+        { id: '7.5', name: 'Analyse réseau et des logs', status: 'completed' },
+        { id: '7.6', name: 'Analyse des endpoints', status: 'completed' },
+      ]
+    },
+    {
+      id: '8',
+      title: 'Fondamentaux de l\'Analyse de Malware',
+      icon: FaNetworkWired,
+      color: 'from-indigo-500 to-indigo-600',
+      progress: 100,
+      items: [
+        { id: '8.1', name: 'Introduction à l\'analyse de malware', status: 'completed' },
+        { id: '8.2', name: 'Comment l\'analyse de malware aide les analystes SOC', status: 'completed' },
+        { id: '8.3', name: 'Définition et types de malware', status: 'completed' },
+        { id: '8.4', name: 'Compétences requises pour un analyste de malware', status: 'completed' },
+        { id: '8.5', name: 'Quelle approche choisir pour analyser un malware', status: 'completed' },
+        { id: '8.6', name: 'Exemple d\'analyse dynamique avec AnyRun', status: 'completed' },
       ]
     }
   ];

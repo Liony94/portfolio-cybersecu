@@ -4,6 +4,7 @@ import TechStack from '@/components/sections/TechStack';
 import CyberSecurityTree from '@/components/sections/CyberSecurityTree';
 import Projects from '@/components/sections/Projects';
 import CasePractices from '@/components/sections/CasePractices';
+import Badges from '@/components/sections/Badges';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <Projects />
         <CasePractices />
+        <Badges />
         <CyberSecurityTree />
         <Journey />
         <TechStack />
