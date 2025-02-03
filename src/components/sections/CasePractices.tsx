@@ -199,7 +199,7 @@ const CasePractices = () => {
                     </span>
                   </div>
                   <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
-                    Investigation d&apos;une alerte déclenchée par une règle trop sensible, 
+                    Investigation d&apos;une alerte déclenchée par une règle trop sensible,
                     démontrant l&apos;importance de l&apos;analyse contextuelle.
                   </p>
                   <Link
